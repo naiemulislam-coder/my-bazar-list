@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvNoteItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Potato 1 kg"
+        android:textColor="#009688"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <!-- চেক বক্স (কেনার আগে দেখাবে) -->
+    <CheckBox
+        android:id="@+id/checkBoxNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        />
+
+    <!-- টিক চিহ্ন (কেনার পর দেখাবে) -->
+    <ImageView
+        android:id="@+id/ivDone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/outline_check_small_24"
+        android:tint="#4CAF50"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- যখন আইটেমটি সিলেক্ট করা থাকবে তখন সবুজ (Green) হবে -->
+    <item android:state_checked="true" android:color="#4CAF50" />
+
+    <!-- যখন সিলেক্ট করা থাকবে না তখন কালচে বা ধূসর থাকবে -->
+    <item android:state_checked="false" android:color="#757575" />
+</selector>

@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <!-- App Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        app:elevation="0dp"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:title="Bazar Note"
+            app:titleTextColor="#212121"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="বাজারের তালিকা তৈরি করুন"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#8BC34A"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etItemName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="আইটেমের নাম"
+                android:padding="10dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnAddItem"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="তালিকায় যোগ করুন"
+                android:backgroundTint="#009688"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="বাজারের তালিকা"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FF9800"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <!-- লিস্ট দেখানোর জন্য RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNoteList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

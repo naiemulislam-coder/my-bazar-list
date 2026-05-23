@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- এখানে আপনি নির্দিষ্ট করতে পারেন কোন ডাটা ব্যাকআপ হবে আর কোনটা হবে না -->
+    <include domain="sharedpref" path="."/>
+    <include domain="database" path="."/>
+</full-backup-content>

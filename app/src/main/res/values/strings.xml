@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Bazar List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Product">বাজারের নাম:</string>
+    <string name="Bazar">বিয়ের বাজার</string>
+    <string name="Name">পণ্যর নাম</string>
+    <string name="Net">পরিমাণ</string>
+    <string name="Prisces">দাম</string>
+    <string name="notifications">Notifications</string>
+    <string name="add_item">Add Item</string>
+    <string name="enter_your_input">Enter your input</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="total_bazar_lists_25">Total Bazar Lists: 25</string>
+    <string name="user_name">User Name</string>
+</resources>
